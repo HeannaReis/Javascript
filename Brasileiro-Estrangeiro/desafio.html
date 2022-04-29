@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Nacionalidade</title>
+</head>
+<body>
+    <h1>Olá! Você é estrangeiro ou Brasileiro ? </h1>
+    Digite o Nome do País aonde você nasceu:
+    <input type="text" nome="origem" id="origem">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resposta">
+    </div>
+
+    <script>
+        function verificar(){
+            var textOrigem = window.document.querySelector('input#origem')
+            var res = window.document.querySelector('div#resposta')
+            var origem = String(textOrigem.value.toLowerCase())
+            
+            if (origem == 'brasil'){
+                res.innerHTML = '<p> Você é <strong> Brasileiro </strong>!</p>'
+            }
+            else {
+                res.innerHTML = '<p> Você é <strong> Estrangeiro </strong>!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
