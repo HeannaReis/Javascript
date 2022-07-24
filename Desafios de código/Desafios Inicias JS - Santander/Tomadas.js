@@ -1,3 +1,4 @@
+
 let line = gets().split(" ");
 
 let a = parseInt(line[0])
@@ -18,4 +19,4 @@ let [t1, t2, t3, t4] = gets().split(" ").map(Number)
 function somaTomadas(t1, t2, t3, t4) {
   return t1 + t2 + t3 + t4 - 3;
 }
-console.log(somaTomadas(t1, t2, t3, t4))
+console.log(somaTomadas(t1, t2, t3, t4))*/
