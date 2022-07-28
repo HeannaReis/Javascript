@@ -9,9 +9,6 @@ let d = parseInt(line[3])
 let tomada = a + b + c + d - 3
 
 console.log(tomada)
-
-
-
  
 /*/ segundo método com map e function
 
